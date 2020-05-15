@@ -1,0 +1,46 @@
+{
+  "name": "monehin.com",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "-": "0.0.1",
+    "D": "^1.0.0",
+    "cra-template": "1.0.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run watch:tailwind\" \"sleep 2 &&  react-scripts start\"",
+    "build": "react-scripts build",
+    "prebuild": "npm run build:tailwind",
+    "watch:tailwind": "postcss -w src/styles/tailwind.css -o src/styles/tailwind.generated.css",
+    "build:tailwind": "postcss src/styles/tailwind.css -o src/styles/tailwind.generated.css",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:5000",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "concurrently": "^5.2.0",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6",
+    "@fullhuman/postcss-purgecss": "^2.2.0"
+  }
+}
