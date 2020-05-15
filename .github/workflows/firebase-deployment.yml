@@ -32,7 +32,11 @@ jobs:
       - name: Download Artifact
         uses: actions/download-artifact@master
         with:
+<<<<<<< HEAD
           name: build
+=======
+          name: public
+>>>>>>> 0061fc7dcec7d45e0d67a3f5a157bbe7e68a29a5
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
