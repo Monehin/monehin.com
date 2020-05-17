@@ -4,4 +4,16 @@
 
 * {
   font-family: 'Julius Sans One', sans-serif;
+  overflow: hidden;
+}
+
+#bg-container {
+  background: #fff;
+  filter: contrast(50px);
+}
+
+#bg-container .box {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(30px);
 }

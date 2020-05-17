@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <div className='bg-red-300 flex w-full h-screen items-center'>
+    <div className='flex w-full h-screen'>
       <HomePage />
     </div>
   );
