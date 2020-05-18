@@ -6238,6 +6238,10 @@ video {
   height: 100%;
 }
 
+.h-1\/2 {
+  height: 40%;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -14339,7 +14343,6 @@ video {
 
 * {
   font-family: 'Julius Sans One', sans-serif;
-  overflow: hidden;
 }
 
 #bg-container {
@@ -19984,6 +19987,10 @@ video {
 
   .sm\:h-full {
     height: 100%;
+  }
+
+  .sm\:h-1\/2 {
+    height: 40%;
   }
 
   .sm\:h-screen {
@@ -33719,6 +33726,10 @@ video {
     height: 100%;
   }
 
+  .md\:h-1\/2 {
+    height: 40%;
+  }
+
   .md\:h-screen {
     height: 100vh;
   }
@@ -47452,6 +47463,10 @@ video {
     height: 100%;
   }
 
+  .lg\:h-1\/2 {
+    height: 40%;
+  }
+
   .lg\:h-screen {
     height: 100vh;
   }
@@ -61183,6 +61198,10 @@ video {
 
   .xl\:h-full {
     height: 100%;
+  }
+
+  .xl\:h-1\/2 {
+    height: 40%;
   }
 
   .xl\:h-screen {

@@ -1,11 +1,16 @@
 import React from 'react';
 import './styles/tailwind.generated.css';
-import HomePage from './pages/HomePage';
+import Homepage from './pages/Homepage';
+import BackgroundEffect from './components/BackgroundEffect';
+import About from './pages/About';
 
 function App() {
   return (
-    <div className='flex w-full h-screen'>
-      <HomePage />
+    <div className='w-full flex flex-col '>
+      <BackgroundEffect>
+        <Homepage />
+        <About />
+      </BackgroundEffect>
     </div>
   );
 }
