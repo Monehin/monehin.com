@@ -19,17 +19,27 @@
 
 #intro-text {
   opacity: 0;
-  animation: fade-in 2s ease forwards;
+  animation: fade-in 4s ease forwards 0.5s;
+}
+
+#my-name {
+  opacity: 0;
+  animation: fade-in 4s ease forwards 2.5s;
 }
 
 #basic-info {
   opacity: 0;
-  animation: fade-in 2s ease forwards 8.5s;
+  animation: fade-in 4s ease forwards 4s;
+}
+
+#what-i-do-text {
+  opacity: 0;
+  animation: fade-in 4s ease forwards 6s;
 }
 
 #current-job-text {
   opacity: 0;
-  animation: fade-in 2s ease forwards 10s;
+  animation: fade-in 4s ease forwards 8s;
 }
 
 #name {
