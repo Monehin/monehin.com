@@ -30,7 +30,7 @@ const BackgroundEffect = (props) => {
       return <div className={`box `} style={boxstyle} key={key}></div>;
     });
     setAnimation(gooeyAnimation);
-    // requestAnimationFrame(BackgroundAnimation);
+    requestAnimationFrame(BackgroundAnimation);
   };
 
   useEffect(BackgroundAnimation, []);
