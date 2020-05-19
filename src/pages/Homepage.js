@@ -18,7 +18,7 @@ const Homepage = () => {
             id='basic-info'
             className='tracking-wide md:text-xl sm:text-sm font-semibold'
           >
-            I write Code, love Art, think Agile.
+            I write Code, love Design, think Agile.
             <br /> <br />
           </p>
           <p

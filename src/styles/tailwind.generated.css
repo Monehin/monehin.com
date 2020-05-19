@@ -14363,16 +14363,16 @@ video {
 
 #basic-info {
   opacity: 0;
-  animation: fade-in 2s ease forwards 9s;
+  animation: fade-in 2s ease forwards 8.5s;
 }
 
 #current-job-text {
   opacity: 0;
-  animation: fade-in 2s ease forwards 11s;
+  animation: fade-in 2s ease forwards 10s;
 }
 
 #name {
-  animation: fill 5s ease forwards 6s;
+  animation: fill 5s ease forwards 5.5s;
 }
 
 #name path:nth-child(1) {
