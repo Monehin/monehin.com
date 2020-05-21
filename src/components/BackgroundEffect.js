@@ -14,7 +14,7 @@ const BackgroundEffect = (props) => {
   }
   const [animation, setAnimation] = useState([]);
   let BackgroundAnimation = () => {
-    const gooeyAnimation = [...Array(15)].map((data, key) => {
+    const gooeyAnimation = [...Array(5)].map((data, key) => {
       const styleLeft = Math.random() * 100;
       const styleTop = Math.random() * 200;
       const randomSize = randomInt(10, 300);
@@ -40,7 +40,7 @@ const BackgroundEffect = (props) => {
       id='bg-container'
       className='absolute top-0 left-0 w-screen h-full overflow-x-hidden'
     >
-      {animation}
+      {/* {animation} */}
       {props.children}
     </div>
   );

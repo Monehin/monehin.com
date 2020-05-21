@@ -6,6 +6,12 @@
   font-family: 'Julius Sans One', sans-serif;
 }
 
+/* .home {
+  background: no-repeat url(../assets/images/bg_profile.png);
+  background-size: contain;
+  background-position: right -50px center;
+} */
+
 #bg-container {
   background: #fff;
   filter: contrast(50px);
