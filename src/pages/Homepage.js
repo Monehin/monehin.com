@@ -33,7 +33,7 @@ const Homepage = () => {
             id='what-i-do-text'
             className='tracking-wide md:text-xl sm:text-sm font-semibold'
           >
-            Team Managment | Frontend Engineering | UI / UX
+            Product Managment | Frontend Engineering | UI / UX
           </p>
         </div>
       </div>
