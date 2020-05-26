@@ -10,21 +10,21 @@ const Homepage = () => {
   let emoji = useRef(null);
 
   useEffect(() => {
-    TweenMax.from([nav, highlight], 3, {
-      opacity: '0',
-      ease: Power3.easeInOut,
-      delay: '1',
-    });
     TweenMax.from(centerSection, 2, { height: '0%', ease: Power3.easeInOut });
     TweenMax.to(centerSection, 2, {
       width: '85%',
       ease: Power3.easeInOut,
       delay: '1',
     });
-    TweenMax.from([currentJob], 3, {
+    TweenMax.from([nav, highlight], 2, {
       opacity: '0',
       ease: Power3.easeInOut,
-      delay: '2',
+      delay: '1.8',
+    });
+    TweenMax.from([currentJob], 2, {
+      opacity: '0',
+      ease: Power3.easeInOut,
+      delay: '1.8',
     });
     TweenMax.from([emoji], 3, {
       opacity: '0',
