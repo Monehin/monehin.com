@@ -54,8 +54,8 @@ const Homepage = () => {
         </h2>
       </div>
       <div
-        className='flex items-center justify-center text-white h-80'
-        style={{ height: '80%' }}
+        className='flex items-center justify-center text-white'
+        style={{ height: '80%', overflow: 'hidden' }}
       >
         <div
           ref={(e) => (centerSection = e)}
