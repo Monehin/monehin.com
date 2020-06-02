@@ -1,7 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import logo from '../assets/logo/monehin_logo.svg';
 import { TweenMax, Power3 } from 'gsap';
-// import { ReactComponent as Name } from '../assets/svg/name.svg';
+import UnderscoreTextEffect from '../components/UnderscoreTextEffect';
+
 const Homepage = () => {
   let nav = useRef(null);
   let highlight = useRef(null);
@@ -32,6 +33,7 @@ const Homepage = () => {
       delay: '3',
     });
   });
+
   return (
     <section className='h-screen w-full'>
       <div
@@ -75,7 +77,6 @@ const Homepage = () => {
               id='my-name'
               className='tracking-widest text-xl sm:text-4xl md:text-6xl lg:text-6xl font-bold'
             >
-              {/* <Name /> */}
               Emmanuel Monehin
             </h1>
             <p
@@ -85,9 +86,9 @@ const Homepage = () => {
               I write Code, love Design, think Agile.
               <br /> <br />
             </p>
-            <p className='tracking-wide md:text-xl sm:text-sm font-semibold'>
-              Product Management | Frontend Engineering | UI / UX
-            </p>
+            <div>
+              <UnderscoreTextEffect />
+            </div>
             <p ref={(e) => (emoji = e)} className='m-4'>
               <span style={{ fontSize: '3rem' }}>{`✌`}</span>
             </p>

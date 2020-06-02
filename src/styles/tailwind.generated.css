@@ -14743,6 +14743,13 @@ video {
   font-family: 'Julius Sans One', sans-serif;
 }
 
+.underscore {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+}
+
 /* .home {
   background: no-repeat url(../assets/images/bg_profile.png);
   background-size: contain;
