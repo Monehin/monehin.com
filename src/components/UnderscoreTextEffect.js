@@ -9,7 +9,7 @@ const UnderscoreTextEffect = () => {
 
   function animateSkillsText(words, id, colors) {
     if (colors === undefined) colors = ['#fff'];
-    var visible = true;
+    var visible = false;
     var letterCount = 1;
     var x = 1;
     var waiting = false;
@@ -77,7 +77,7 @@ const UnderscoreTextEffect = () => {
         <div
           style={{ color: color }}
           ref={(e) => (underscore = e)}
-          class='underscore'
+          className='underscore'
           id='console'
         >
           &#95;
