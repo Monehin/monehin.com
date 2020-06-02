@@ -30,7 +30,7 @@ const UnderscoreTextEffect = () => {
           setColor(colors[0]);
           letterCount += x;
           waiting = false;
-        }, 1000);
+        }, 2000);
       } else if (letterCount === words[0].length + 1 && waiting === false) {
         waiting = true;
         setTimeout(function () {
@@ -59,11 +59,13 @@ const UnderscoreTextEffect = () => {
   }
 
   useEffect(() => {
-    animateSkillsText(
-      ['Product Management', 'Frontend Engineering', 'UI / UX', 'Music'],
-      'text',
-      ['rebeccapurple ', 'tomato', 'chocolate', 'salmon']
-    );
+    setTimeout(() => {
+      animateSkillsText(
+        ['Product Management', 'Frontend Engineering', 'UI / UX', 'Music'],
+        'text',
+        ['rebeccapurple', 'tomato', 'red', 'grey']
+      );
+    }, 5000);
   }, []);
   return (
     <div>
