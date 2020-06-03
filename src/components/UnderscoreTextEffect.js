@@ -3,13 +3,19 @@ import { TweenMax } from 'gsap';
 
 const UnderscoreTextEffect = () => {
   let underscore = useRef(null);
-
+  const skills = [
+    'Product Management',
+    'Frontend Engineering',
+    'UI / UX',
+    'Music',
+  ];
+  const colors = ['rebeccapurple', 'tomato', 'red', 'grey'];
   const [skillText, setSkillText] = useState('');
-  const [color, setColor] = useState('#fff');
+  const [color, setColor] = useState(colors[0]);
+  const [visible, setVisible] = useState(true);
 
   function animateSkillsText(words, id, colors) {
     if (colors === undefined) colors = ['#fff'];
-    var visible = false;
     var letterCount = 1;
     var x = 1;
     var waiting = false;
@@ -22,9 +28,9 @@ const UnderscoreTextEffect = () => {
         waiting = true;
         setSkillText(words[0].substring(0, letterCount));
         setTimeout(function () {
-          var usedColor = colors.shift();
+          let usedColor = colors.shift();
           colors.push(usedColor);
-          var usedWord = words.shift();
+          let usedWord = words.shift();
           words.push(usedWord);
           x = 1;
           setColor(colors[0]);
@@ -44,28 +50,14 @@ const UnderscoreTextEffect = () => {
       }
     }, 120);
     setInterval(function () {
-      if (visible === true) {
-        TweenMax.to(underscore, 0.5, {
-          display: 'none',
-        });
-        visible = false;
-      } else {
-        TweenMax.to(underscore, 0.5, {
-          display: 'inline-block',
-        });
-        visible = true;
-      }
+      setVisible((bool) => !bool);
     }, 400);
   }
 
   useEffect(() => {
     setTimeout(() => {
-      animateSkillsText(
-        ['Product Management', 'Frontend Engineering', 'UI / UX', 'Music'],
-        'text',
-        ['rebeccapurple', 'tomato', 'red', 'grey']
-      );
-    }, 5000);
+      animateSkillsText(skills, '', colors);
+    }, 7000);
   }, []);
   return (
     <div>
@@ -75,10 +67,9 @@ const UnderscoreTextEffect = () => {
       >
         {skillText}
         <div
-          style={{ color: color }}
+          style={{ color: color, opacity: visible ? 0 : 1 }}
           ref={(e) => (underscore = e)}
           className='underscore'
-          id='console'
         >
           &#95;
         </div>

@@ -69,7 +69,7 @@ const Homepage = () => {
           >
             <h4
               id='intro-text'
-              className=' pl-4 tracking-wide md:text-xl sm:text-sm font-semibold'
+              className=' pl-4 tracking-wide md:text-xl sm:text-sm font-semibold my-8'
             >
               Hi, I'm
             </h4>
@@ -81,17 +81,17 @@ const Homepage = () => {
             </h1>
             <p
               id='basic-info'
-              className='tracking-wide md:text-xl sm:text-sm font-semibold'
+              className='tracking-wide md:text-xl sm:text-sm font-semibold mt-8'
             >
               I write Code, love Design, think Agile.
               <br /> <br />
             </p>
-            <div>
-              <UnderscoreTextEffect />
-            </div>
             <p ref={(e) => (emoji = e)} className='m-4'>
               <span style={{ fontSize: '3rem' }}>{`✌`}</span>
             </p>
+            <div>
+              <UnderscoreTextEffect />
+            </div>
           </div>
         </div>
       </div>
