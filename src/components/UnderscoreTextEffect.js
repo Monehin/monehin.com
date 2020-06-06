@@ -14,7 +14,7 @@ const UnderscoreTextEffect = () => {
     var letterCount = 1;
     var x = 1;
     var waiting = false;
-    TweenMax.to(underscore, 0.1, {
+    TweenMax.to(underscore, 0.1, 
       color: colors[0],
     });
     setColor(colors[0]);
@@ -52,7 +52,7 @@ const UnderscoreTextEffect = () => {
   useEffect(() => {
     setTimeout(() => {
       animateSkillsText(skills, '', colors);
-    }, 7000);
+    }, 6000);
   }, []);
   return (
     <div>
