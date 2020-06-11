@@ -52,7 +52,7 @@ const UnderscoreTextEffect = () => {
   useEffect(() => {
     setTimeout(() => {
       animateSkillsText(skills, '', colors);
-    }, 6000);
+    }, 6500);
   }, []);
   return (
     <div>
