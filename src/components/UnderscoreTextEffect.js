@@ -4,7 +4,7 @@ import { TweenMax } from 'gsap';
 const UnderscoreTextEffect = () => {
   let underscore = useRef(null);
   const skills = ['Frontend Engineering', 'UI / UX', 'Product Management'];
-  const colors = ['orange', 'rebeccapurple', 'red'];
+  const colors = ['orange', 'rebeccapurple', 'green'];
   const [skillText, setSkillText] = useState('');
   const [color, setColor] = useState(colors[0]);
   const [visible, setVisible] = useState(true);
