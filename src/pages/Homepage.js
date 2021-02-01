@@ -104,7 +104,7 @@ const Homepage = () => {
           id='current-job-text'
           className='tracking-wide md:text-sm sm:text-sm font-semibold text-center'
         >
-          Currently Senior Engineering Program Coordinator at&nbsp;
+          Engineering Experience Lead at&nbsp;
           <a
             className='font-semibold text-purple-900 md:text-xl '
             href='https://andela.com/'
